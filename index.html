@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#fdf6e3" />
+<title>Pata Molhada Pet Shop — Banho e tosa em Campinas · Uber Pet</title>
+<meta name="description" content="Pet shop em Campinas/SP. Banho, tosa, hidratação e tosa a tesoura — terça à sábado. Uber Pet (a gente busca e leva). 5,0★ no Google." />
+
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://patamolhada.vercel.app/" />
+<meta property="og:title" content="Pata Molhada Pet Shop — Banho, tosa e Uber Pet em Campinas" />
+<meta property="og:description" content="Banho, tosa, hidratação e tosa a tesoura · ter-sáb · Uber Pet · 5,0★ no Google · Jardim Paranapanema, Campinas/SP" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Pata Molhada Pet Shop — Campinas" />
+<meta name="twitter:description" content="Banho · Tosa · Hidratação · Uber Pet · 5,0★" />
+
+<link rel="canonical" href="https://patamolhada.vercel.app/" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23fdf6e3'/%3E%3Ctext x='50' y='72' font-family='Georgia,serif' font-style='italic' font-weight='700' font-size='75' fill='%23d97757' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          mono: ['JetBrains Mono', 'ui-monospace', 'monospace'],
+          display: ['Fraunces', 'Georgia', 'serif'],
+        },
+        colors: {
+          cream: {
+            DEFAULT: '#fdf6e3',
+            warm: '#f7efe2',
+            soft: '#f0e6cf',
+          },
+          terra: {
+            light: '#e89977',
+            DEFAULT: '#d97757',
+            deep: '#b35a3d',
+          },
+          sage: {
+            light: '#9eba9e',
+            DEFAULT: '#7fa28a',
+            deep: '#5a7560',
+          },
+          cocoa: {
+            DEFAULT: '#3d2918',
+            soft: '#5c4530',
+            light: '#8b7559',
+          },
+        },
+      },
+    },
+  };
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PetStore",
+  "name": "Pata Molhada Pet Shop",
+  "telephone": "+5551985052984",
+  "url": "https://patamolhada.vercel.app/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "R. Serra das Vertentes, 343",
+    "addressLocality": "Campinas",
+    "addressRegion": "SP",
+    "postalCode": "13100-238",
+    "addressCountry": "BR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "1"
+  }
+}
+</script>
+
+<script>
+  (function() {
+    function detectMobile() {
+      var w = window.innerWidth || document.documentElement.clientWidth;
+      var ua = navigator.userAgent || '';
+      var isMobile = w <= 640 || /Android|iPhone|iPod|IEMobile/i.test(ua);
+      document.documentElement.classList.toggle('is-mobile', isMobile);
+    }
+    detectMobile();
+    window.addEventListener('resize', detectMobile);
+
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('is-revealed');
+            observer.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('[data-reveal]').forEach(function(el) { observer.observe(el); });
+      });
+    }
+  })();
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body {
+    -webkit-font-smoothing: antialiased;
+    background: #fdf6e3;
+    color: #3d2918;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+  ::selection { background: rgba(217,119,87,0.35); color: #3d2918; }
+
+  .display { font-family: 'Fraunces', Georgia, serif; font-feature-settings: "kern" 1, "liga" 1, "ss01" 1; font-variation-settings: "SOFT" 100; }
+  .display-italic { font-family: 'Fraunces', Georgia, serif; font-style: italic; font-variation-settings: "SOFT" 100; }
+
+  .hero-name { font-size: clamp(48px, 11vw, 9rem); line-height: 0.95; letter-spacing: -0.025em; }
+
+  /* Texture suave bg */
+  .paper-bg {
+    background-image:
+      radial-gradient(ellipse 80% 50% at 20% 0%, rgba(217,119,87,0.10), transparent 70%),
+      radial-gradient(ellipse 60% 60% at 80% 100%, rgba(127,162,138,0.10), transparent 70%);
+  }
+
+  /* Decorative paw prints scattered */
+  .paw-decoration::before {
+    content: '🐾';
+    position: absolute;
+    font-size: 24px;
+    opacity: 0.18;
+    pointer-events: none;
+  }
+
+  @keyframes pulse-terra {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(217,119,87,0.5); }
+    50%      { box-shadow: 0 0 0 14px rgba(217,119,87,0); }
+  }
+  .pulse-terra { animation: pulse-terra 2.6s ease-in-out infinite; }
+
+  @keyframes ticker {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+  .ticker-anim { animation: ticker 35s linear infinite; }
+
+  [data-reveal] {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 800ms cubic-bezier(0.16,1,0.3,1), transform 800ms cubic-bezier(0.16,1,0.3,1);
+  }
+  [data-reveal].is-revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  [data-reveal-delay="1"] { transition-delay: 80ms; }
+  [data-reveal-delay="2"] { transition-delay: 160ms; }
+  [data-reveal-delay="3"] { transition-delay: 240ms; }
+  [data-reveal-delay="4"] { transition-delay: 320ms; }
+
+  .lift-card {
+    transition: transform 400ms cubic-bezier(0.16,1,0.3,1), border-color 300ms ease, box-shadow 400ms ease;
+  }
+  .lift-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(217,119,87,0.5);
+    box-shadow: 0 16px 40px -12px rgba(217,119,87,0.18);
+  }
+
+  .ornament-line { position: relative; display: inline-flex; align-items: center; gap: 0.75rem; }
+  .ornament-line::before, .ornament-line::after {
+    content: '';
+    width: 28px; height: 1px;
+    background: linear-gradient(to right, transparent, rgba(217,119,87,0.5), transparent);
+  }
+  @media (max-width: 640px) {
+    .ornament-line::before, .ornament-line::after { width: 14px; }
+  }
+
+  /* Photo placeholder pattern */
+  .photo-placeholder {
+    background:
+      linear-gradient(135deg, rgba(217,119,87,0.15) 0%, rgba(127,162,138,0.15) 100%),
+      repeating-linear-gradient(45deg, transparent 0, transparent 8px, rgba(217,119,87,0.04) 8px, rgba(217,119,87,0.04) 16px);
+  }
+</style>
+
+<!--
+  =====================================================================
+  PATA MOLHADA PET SHOP — pitch demo
+  Dados (Google Maps + Insta):
+    · Razão: Pata Molhada Pet Shop
+    · Endereço: R. Serra das Vertentes, 343 · Jardim Paranapanema · Campinas/SP · 13100-238
+    · Telefone fixo: (19) 99109-6044
+    · WhatsApp: (51) 98505-2984 → wa.me/5551985052984
+    · Avaliação: 5,0★ · 1 avaliação Google (poucas mas perfeita)
+    · Serviços: Banho · Tosa · Hidratação · Tosa a tesoura
+    · Atendimento: terça a sábado (sábado com agendamento)
+    · Diferencial: UBER PET (busca e leva o pet)
+
+  PENDENTE (Felipe envia depois):
+    · pet-01.jpg ... pet-12.jpg em /images/ (galeria de clientes)
+    · hero-bg.jpg (foto da fachada do petshop pra hero blurred — opcional)
+    · Logo (atualmente placeholder tipográfico "P" terracotta)
+  =====================================================================
+-->
+
+</head>
+
+<body class="bg-cream text-cocoa font-sans pb-[80px] sm:pb-0 paper-bg">
+
+<!-- ============ FLOATING WHATSAPP ============ -->
+<a
+  href="https://wa.me/5551985052984?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Pata%20Molhada%20e%20quero%20agendar%20banho%2Ftosa."
+  target="_blank"
+  rel="noopener noreferrer"
+  class="hidden sm:flex fixed bottom-5 right-5 z-50 items-center gap-3 bg-terra hover:bg-terra-deep text-cream pl-4 pr-5 py-3 rounded-full font-semibold text-sm shadow-2xl pulse-terra hover:scale-105 transition"
+  aria-label="Falar no WhatsApp"
+>
+  <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<!-- ============ STICKY HEADER ============ -->
+<header class="sticky top-0 z-40 bg-cream/90 border-b border-terra/15" style="-webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between gap-4">
+    <a href="#top" class="flex items-baseline gap-2.5">
+      <span class="display-italic text-3xl font-bold text-terra leading-none">Pata Molhada</span>
+      <span class="hidden sm:inline font-mono text-[9px] uppercase tracking-[0.4em] text-cocoa-light">pet shop</span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-7 text-[13px] font-medium text-cocoa-soft">
+      <a href="#servicos" class="hover:text-terra transition">Serviços</a>
+      <a href="#galeria" class="hover:text-terra transition">Galeria</a>
+      <a href="#agendar" class="hover:text-terra transition">Agendar</a>
+      <a href="#localizacao" class="hover:text-terra transition">Localização</a>
+    </nav>
+    <a
+      href="https://wa.me/5551985052984?text=Ol%C3%A1!%20Quero%20agendar%20banho%2Ftosa%20para%20meu%20pet."
+      target="_blank"
+      rel="noopener noreferrer"
+      class="hidden sm:inline-flex items-center gap-2 bg-terra hover:bg-terra-deep text-cream font-semibold text-[13px] px-4 py-2.5 rounded-full transition shadow-md shadow-terra/30"
+    >
+      Agendar banho
+    </a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="top" class="relative min-h-[88vh] flex items-center overflow-hidden">
+  <!-- Foto-fundo blurred (Felipe: dropar em images/hero-bg.jpg, opcional) -->
+  <div
+    class="absolute inset-0 bg-cover scale-110 opacity-40"
+    style="background-image: url('images/hero-bg.jpg'); background-position: center 40%; filter: blur(10px) saturate(1.1) brightness(1.05);"
+    aria-hidden="true"
+  ></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-cream/60 via-cream/40 to-cream" aria-hidden="true"></div>
+
+  <!-- Decorative paw prints -->
+  <span class="absolute top-20 left-[8%] text-3xl opacity-15 rotate-[-15deg]" aria-hidden="true">🐾</span>
+  <span class="absolute top-40 right-[12%] text-2xl opacity-15 rotate-[20deg]" aria-hidden="true">🐾</span>
+  <span class="absolute bottom-32 left-[15%] text-2xl opacity-15 rotate-[35deg]" aria-hidden="true">🐾</span>
+  <span class="absolute bottom-20 right-[20%] text-3xl opacity-15 rotate-[-10deg]" aria-hidden="true">🐾</span>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 w-full">
+    <div class="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <div class="lg:col-span-7" data-reveal>
+        <p class="ornament-line font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.4em] text-terra-deep">
+          <span>Banho · Tosa · Hidratação · Campinas</span>
+        </p>
+
+        <h1 class="display font-bold mt-7 text-cocoa hero-name">
+          Pata <span class="display-italic text-terra">Molhada</span><br/>
+          <span class="display text-cocoa-soft text-[clamp(28px,6vw,4.5rem)]">Pet Shop</span>
+        </h1>
+
+        <p class="display-italic font-medium mt-8 text-2xl sm:text-3xl lg:text-4xl text-cocoa leading-snug max-w-2xl">
+          Cuidado profissional pro <span class="text-terra">seu melhor amigo</span>.
+        </p>
+
+        <p class="mt-6 text-cocoa-soft text-base sm:text-lg max-w-xl leading-relaxed">
+          Banho, tosa, hidratação e tosa a tesoura no Jardim Paranapanema. Atendemos terça a sábado e ainda buscamos seu pet em casa.
+        </p>
+
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a
+            href="https://wa.me/5551985052984?text=Ol%C3%A1!%20Quero%20agendar%20banho%2Ftosa%20para%20meu%20pet."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center gap-3 bg-terra hover:bg-terra-deep text-cream font-bold text-base sm:text-lg px-8 py-4 rounded-full shadow-xl shadow-terra/30 transition pulse-terra w-full sm:w-auto"
+          >
+            <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            Agendar agora
+          </a>
+          <a
+            href="#servicos"
+            class="inline-flex items-center justify-center gap-2 border-2 border-cocoa/20 hover:border-terra hover:text-terra text-cocoa font-semibold text-base px-6 py-4 rounded-full transition"
+          >
+            Ver serviços
+          </a>
+        </div>
+
+        <ul class="mt-10 grid grid-cols-3 gap-4 max-w-lg">
+          <li>
+            <div class="flex items-center gap-1 text-terra"><span class="text-xl">★</span><span class="display-italic font-bold text-3xl text-cocoa">5,0</span></div>
+            <p class="font-mono text-[9px] uppercase tracking-[0.2em] text-cocoa-light mt-1">Google · 1 avaliação</p>
+          </li>
+          <li>
+            <div class="display-italic font-bold text-3xl text-cocoa">Ter–Sáb</div>
+            <p class="font-mono text-[9px] uppercase tracking-[0.2em] text-cocoa-light mt-1">Atendimento</p>
+          </li>
+          <li>
+            <div class="display-italic font-bold text-3xl text-cocoa">Uber Pet</div>
+            <p class="font-mono text-[9px] uppercase tracking-[0.2em] text-cocoa-light mt-1">Busca · Leva</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Hero side card with paw + photo placeholder -->
+      <div class="lg:col-span-5 relative" data-reveal data-reveal-delay="2">
+        <div class="relative bg-white border border-terra/20 rounded-3xl shadow-2xl shadow-terra/10 p-8 sm:p-10">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-full bg-terra/15 flex items-center justify-center text-2xl">🐾</div>
+            <div>
+              <p class="font-mono text-[10px] uppercase tracking-[0.3em] text-terra-deep">Como funciona</p>
+              <p class="display-italic font-bold text-xl text-cocoa">Em 3 passos</p>
+            </div>
+          </div>
+
+          <ol class="mt-7 space-y-5">
+            <li class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-8 h-8 rounded-full bg-terra text-cream flex items-center justify-center font-bold text-sm">1</div>
+              <div>
+                <p class="font-bold text-cocoa">Manda mensagem no WhatsApp</p>
+                <p class="text-sm text-cocoa-soft mt-0.5">Diz raça, porte e o que precisa (banho, tosa, etc).</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-8 h-8 rounded-full bg-sage text-cream flex items-center justify-center font-bold text-sm">2</div>
+              <div>
+                <p class="font-bold text-cocoa">A gente confirma horário</p>
+                <p class="text-sm text-cocoa-soft mt-0.5">Te passa janela disponível na semana — terça a sábado.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-8 h-8 rounded-full bg-cocoa-soft text-cream flex items-center justify-center font-bold text-sm">3</div>
+              <div>
+                <p class="font-bold text-cocoa">Uber Pet busca em casa <span class="text-terra">(opcional)</span></p>
+                <p class="text-sm text-cocoa-soft mt-0.5">Você nem precisa sair. A gente busca, cuida, devolve cheiroso.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="absolute -top-4 -right-4 bg-sage text-cream font-mono text-[10px] uppercase tracking-[0.3em] px-4 py-2 rounded-full shadow-lg">
+          ★ 5,0 Google
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TICKER ============ -->
+<section class="bg-terra text-cream overflow-hidden border-y border-terra-deep py-3 relative" aria-hidden="true">
+  <div class="whitespace-nowrap display-italic font-bold text-xl sm:text-2xl flex gap-10 ticker-anim">
+    <span>🐾 Banho</span><span>·</span>
+    <span>🐾 Tosa Higiênica</span><span>·</span>
+    <span>🐾 Tosa a Tesoura</span><span>·</span>
+    <span>🐾 Hidratação</span><span>·</span>
+    <span>🐾 Uber Pet</span><span>·</span>
+    <span>🐾 Banho</span><span>·</span>
+    <span>🐾 Tosa Higiênica</span><span>·</span>
+    <span>🐾 Tosa a Tesoura</span><span>·</span>
+    <span>🐾 Hidratação</span><span>·</span>
+    <span>🐾 Uber Pet</span><span>·</span>
+  </div>
+</section>
+
+<!-- ============ SERVIÇOS ============ -->
+<section id="servicos" class="py-20 sm:py-28 px-5 sm:px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto" data-reveal>
+      <p class="ornament-line font-mono text-[10px] uppercase tracking-[0.4em] text-terra-deep"><span>Nossos serviços</span></p>
+      <h2 class="display font-bold mt-6 text-4xl sm:text-6xl text-cocoa leading-[1.05]">
+        Tudo o que seu pet <span class="display-italic text-terra">precisa</span>.
+      </h2>
+      <p class="mt-6 text-lg text-cocoa-soft leading-relaxed">
+        Profissional certo, produto certo, paciência de sobra. Pra cada porte, pelagem e personalidade.
+      </p>
+    </div>
+
+    <div class="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <article class="lift-card bg-white border border-terra/15 rounded-2xl p-7 sm:p-8" data-reveal>
+        <div class="text-4xl">🛁</div>
+        <h3 class="display-italic font-bold text-2xl mt-5 text-cocoa">Banho</h3>
+        <p class="mt-3 text-cocoa-soft text-sm leading-relaxed">
+          Shampoo profissional Hydra, secagem cuidadosa, perfume final. Pequenos, médios e grandes — ajustamos o tempo pra cada pet.
+        </p>
+      </article>
+
+      <article class="lift-card bg-white border border-terra/15 rounded-2xl p-7 sm:p-8" data-reveal data-reveal-delay="1">
+        <div class="text-4xl">✂️</div>
+        <h3 class="display-italic font-bold text-2xl mt-5 text-cocoa">Tosa higiênica</h3>
+        <p class="mt-3 text-cocoa-soft text-sm leading-relaxed">
+          Aparada nas regiões delicadas (focinho, orelhas, patas, intimidade). Mantém o pet limpo e fresco entre as tosas completas.
+        </p>
+      </article>
+
+      <article class="lift-card bg-white border border-terra/15 rounded-2xl p-7 sm:p-8" data-reveal data-reveal-delay="2">
+        <div class="text-4xl">🪒</div>
+        <h3 class="display-italic font-bold text-2xl mt-5 text-cocoa">Tosa a tesoura</h3>
+        <p class="mt-3 text-cocoa-soft text-sm leading-relaxed">
+          Acabamento de profissional, no padrão da raça. Pra Shih Tzu, Lhasa, Yorkshire, Maltês — os clássicos da tesoura.
+        </p>
+      </article>
+
+      <article class="lift-card bg-white border border-sage/30 rounded-2xl p-7 sm:p-8" data-reveal>
+        <div class="text-4xl">💧</div>
+        <h3 class="display-italic font-bold text-2xl mt-5 text-cocoa">Hidratação</h3>
+        <p class="mt-3 text-cocoa-soft text-sm leading-relaxed">
+          Tratamento profundo pro pelo: maciez, brilho, restauração. Indicado pra cães de pelo longo ou após muitos banhos.
+        </p>
+      </article>
+
+      <article class="lift-card bg-gradient-to-br from-terra to-terra-deep text-cream rounded-2xl p-7 sm:p-8 sm:col-span-2 lg:col-span-2 flex flex-col sm:flex-row gap-6 items-start" data-reveal data-reveal-delay="1">
+        <div class="text-5xl flex-shrink-0">🚗</div>
+        <div class="flex-1">
+          <p class="font-mono text-[10px] uppercase tracking-[0.3em] text-cream/70">Diferencial</p>
+          <h3 class="display-italic font-bold text-3xl mt-3">Uber Pet</h3>
+          <p class="mt-3 text-cream/90 leading-relaxed">
+            Você não precisa sair de casa. A gente busca seu pet, cuida com carinho, e devolve cheiroso na sua porta. <strong>Cobertura por toda Campinas.</strong>
+          </p>
+          <a href="https://wa.me/5551985052984?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20Uber%20Pet." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 mt-5 bg-cream/15 hover:bg-cream/25 backdrop-blur-sm font-semibold text-sm px-5 py-2.5 rounded-full transition border border-cream/30">
+            Saber valor da rota →
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERIA DE PETS ============ -->
+<section id="galeria" class="py-20 sm:py-28 px-5 sm:px-8 bg-cream-warm">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto" data-reveal>
+      <p class="ornament-line font-mono text-[10px] uppercase tracking-[0.4em] text-terra-deep"><span>Os clientes</span></p>
+      <h2 class="display font-bold mt-6 text-4xl sm:text-6xl text-cocoa leading-[1.05]">
+        Quem já passou <span class="display-italic text-terra">pela banheira</span>.
+      </h2>
+      <p class="mt-6 text-lg text-cocoa-soft leading-relaxed">
+        Cada pet sai com sua identidade. A gente respeita raça, personalidade e o gosto do dono.
+      </p>
+    </div>
+
+    <div class="mt-14 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4">
+      <!-- 12 placeholders. Felipe dropa pet-01.jpg até pet-12.jpg em /images/ -->
+      <figure class="lift-card aspect-square overflow-hidden rounded-xl bg-white border border-terra/15 photo-placeholder relative group">
+        <img src="images/pet-01.jpg" alt="Pet cliente" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'" />
+      </figure>
+      <figure class="lift-card aspect-square overflow-hidden rounded-xl bg-white border border-terra/15 photo-placeholder relative group">
+        <img src="images/pet-02.jpg" alt="Pet cliente" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'" />
+      </figure>
+      <figure class="lift-card aspect-square overflow-hidden rounded-xl bg-white border border-terra/15 photo-placeholder relative group">
+        <img src="images/pet-03.jpg" alt="Pet cliente" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'" />
+      </figure>
+      <figure class="lift-card aspect-square overflow-hidden rounded-xl bg-white border border-terra/15 photo-placeholder relative group">
+        <img src="images/pet-04.jpg" alt="Pet cliente" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'" />
+      </figure>
+      <figure class="lift-card aspect-square overflow-hidden rounded-xl bg-white border border-terra/15 photo-placeholder relative group">
+        <img src="images/pet-05.jpg" alt="Pet cliente" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'" />
+      </figure>
+      <figure class="lift-card aspect-square overflow-hidden rounded-xl bg-white border border-terra/15 photo-placeholder relative group">
+        <img src="images/pet-06.jpg" alt="Pet cliente" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'" />
+      </figure>
+      <figure class="lift-card aspect-square overflow-hidden rounded-xl bg-white border border-terra/15 photo-placeholder relative group">
+        <img src="images/pet-07.jpg" alt="Pet cliente" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'" />
+      </figure>
+      <figure class="lift-card aspect-square overflow-hidden rounded-xl bg-white border border-terra/15 photo-placeholder relative group">
+        <img src="images/pet-08.jpg" alt="Pet cliente" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'" />
+      </figure>
+      <figure class="lift-card aspect-square overflow-hidden rounded-xl bg-white border border-terra/15 photo-placeholder relative group">
+        <img src="images/pet-09.jpg" alt="Pet cliente" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'" />
+      </figure>
+      <figure class="lift-card aspect-square overflow-hidden rounded-xl bg-white border border-terra/15 photo-placeholder relative group">
+        <img src="images/pet-10.jpg" alt="Pet cliente" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'" />
+      </figure>
+      <figure class="lift-card aspect-square overflow-hidden rounded-xl bg-white border border-terra/15 photo-placeholder relative group">
+        <img src="images/pet-11.jpg" alt="Pet cliente" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'" />
+      </figure>
+      <figure class="lift-card aspect-square overflow-hidden rounded-xl bg-white border border-terra/15 photo-placeholder relative group">
+        <img src="images/pet-12.jpg" alt="Pet cliente" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'" />
+      </figure>
+    </div>
+
+    <p class="mt-10 text-center font-mono text-[11px] uppercase tracking-[0.3em] text-cocoa-light">
+      Manda foto do seu pet pós-banho · marca @patamolhadapetshop
+    </p>
+  </div>
+</section>
+
+<!-- ============ AGENDAR ============ -->
+<section id="agendar" class="py-20 sm:py-28 px-5 sm:px-8">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto" data-reveal>
+      <p class="ornament-line font-mono text-[10px] uppercase tracking-[0.4em] text-terra-deep"><span>Como agendar</span></p>
+      <h2 class="display font-bold mt-6 text-4xl sm:text-6xl text-cocoa leading-[1.05]">
+        Sem espera. <span class="display-italic text-terra">Sem complicação.</span>
+      </h2>
+      <p class="mt-6 text-lg text-cocoa-soft leading-relaxed">
+        Toque no serviço que você quer e a gente já abre o WhatsApp com a mensagem certa pra você.
+      </p>
+    </div>
+
+    <div class="mt-14 grid sm:grid-cols-2 gap-4">
+      <a href="https://wa.me/5551985052984?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20BANHO.%20Meu%20pet%20%C3%A9%20da%20ra%C3%A7a%20___%20e%20porte%20___." target="_blank" rel="noopener noreferrer" class="lift-card flex items-center justify-between bg-white border-2 border-terra/30 hover:border-terra rounded-2xl p-6 group">
+        <div class="flex items-center gap-4">
+          <span class="text-3xl">🛁</span>
+          <div>
+            <p class="display-italic font-bold text-xl text-cocoa">Agendar Banho</p>
+            <p class="text-xs text-cocoa-light mt-0.5">Mensagem pré-preenchida com raça e porte</p>
+          </div>
+        </div>
+        <span class="text-terra text-2xl group-hover:translate-x-1 transition">→</span>
+      </a>
+
+      <a href="https://wa.me/5551985052984?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20TOSA%20HIGI%C3%8ANICA.%20Meu%20pet%20%C3%A9%20da%20ra%C3%A7a%20___%20e%20porte%20___." target="_blank" rel="noopener noreferrer" class="lift-card flex items-center justify-between bg-white border-2 border-terra/30 hover:border-terra rounded-2xl p-6 group">
+        <div class="flex items-center gap-4">
+          <span class="text-3xl">✂️</span>
+          <div>
+            <p class="display-italic font-bold text-xl text-cocoa">Agendar Tosa Higiênica</p>
+            <p class="text-xs text-cocoa-light mt-0.5">Aparada nas regiões delicadas</p>
+          </div>
+        </div>
+        <span class="text-terra text-2xl group-hover:translate-x-1 transition">→</span>
+      </a>
+
+      <a href="https://wa.me/5551985052984?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20TOSA%20A%20TESOURA.%20Meu%20pet%20%C3%A9%20da%20ra%C3%A7a%20___." target="_blank" rel="noopener noreferrer" class="lift-card flex items-center justify-between bg-white border-2 border-terra/30 hover:border-terra rounded-2xl p-6 group">
+        <div class="flex items-center gap-4">
+          <span class="text-3xl">🪒</span>
+          <div>
+            <p class="display-italic font-bold text-xl text-cocoa">Agendar Tosa a Tesoura</p>
+            <p class="text-xs text-cocoa-light mt-0.5">Acabamento profissional na raça</p>
+          </div>
+        </div>
+        <span class="text-terra text-2xl group-hover:translate-x-1 transition">→</span>
+      </a>
+
+      <a href="https://wa.me/5551985052984?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20HIDRATA%C3%87%C3%83O.%20Meu%20pet%20%C3%A9%20da%20ra%C3%A7a%20___." target="_blank" rel="noopener noreferrer" class="lift-card flex items-center justify-between bg-white border-2 border-sage/40 hover:border-sage rounded-2xl p-6 group">
+        <div class="flex items-center gap-4">
+          <span class="text-3xl">💧</span>
+          <div>
+            <p class="display-italic font-bold text-xl text-cocoa">Agendar Hidratação</p>
+            <p class="text-xs text-cocoa-light mt-0.5">Pra cães de pelo longo ou ressecado</p>
+          </div>
+        </div>
+        <span class="text-sage text-2xl group-hover:translate-x-1 transition">→</span>
+      </a>
+
+      <a href="https://wa.me/5551985052984?text=Ol%C3%A1!%20Quero%20saber%20sobre%20o%20UBER%20PET%20(busca%20em%20casa).%20Meu%20bairro%20%C3%A9%20___." target="_blank" rel="noopener noreferrer" class="lift-card flex items-center justify-between bg-gradient-to-br from-terra to-terra-deep text-cream rounded-2xl p-6 group sm:col-span-2">
+        <div class="flex items-center gap-4">
+          <span class="text-4xl">🚗</span>
+          <div>
+            <p class="display-italic font-bold text-2xl">Agendar Uber Pet</p>
+            <p class="text-xs text-cream/80 mt-1">A gente busca em casa, cuida e devolve. Pergunta a rota do seu bairro.</p>
+          </div>
+        </div>
+        <span class="text-cream text-2xl group-hover:translate-x-1 transition">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOCALIZAÇÃO ============ -->
+<section id="localizacao" class="py-20 sm:py-28 px-5 sm:px-8 bg-cream-warm">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto" data-reveal>
+      <p class="ornament-line font-mono text-[10px] uppercase tracking-[0.4em] text-terra-deep"><span>Onde estamos</span></p>
+      <h2 class="display font-bold mt-6 text-4xl sm:text-6xl text-cocoa leading-[1.05]">
+        Jardim <span class="display-italic text-terra">Paranapanema</span>.
+      </h2>
+    </div>
+
+    <div class="mt-14 grid lg:grid-cols-2 gap-6 items-stretch">
+      <div class="bg-white border border-terra/15 rounded-2xl p-7 sm:p-9 flex flex-col justify-between" data-reveal>
+        <div>
+          <p class="font-mono text-[10px] uppercase tracking-[0.4em] text-terra-deep">Endereço</p>
+          <p class="display-italic font-bold text-2xl sm:text-3xl text-cocoa mt-3 leading-snug">
+            R. Serra das Vertentes, 343
+          </p>
+          <p class="text-cocoa-soft mt-2">
+            Jardim Paranapanema · Campinas / SP<br/>
+            CEP 13100-238
+          </p>
+
+          <div class="mt-7 space-y-3">
+            <div class="flex items-center gap-3">
+              <span class="w-9 h-9 rounded-lg bg-terra/15 text-terra flex items-center justify-center flex-shrink-0">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              </span>
+              <a href="https://wa.me/5551985052984" target="_blank" rel="noopener noreferrer" class="font-semibold text-cocoa hover:text-terra transition">(51) 98505-2984 · WhatsApp</a>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="w-9 h-9 rounded-lg bg-cocoa/10 text-cocoa-soft flex items-center justify-center flex-shrink-0">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              </span>
+              <a href="tel:+551999109604" class="font-medium text-cocoa-soft hover:text-terra transition">(19) 99109-6044 · loja</a>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="w-9 h-9 rounded-lg bg-sage/15 text-sage-deep flex items-center justify-center flex-shrink-0">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+              </span>
+              <p class="text-cocoa-soft text-sm">Atendemos de <strong class="text-cocoa">terça a sábado</strong> · sábado com agendamento</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 grid grid-cols-2 gap-3">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=R.+Serra+das+Vertentes+343+Jardim+Paranapanema+Campinas+SP" target="_blank" rel="noopener noreferrer" class="bg-white border-2 border-cocoa/15 hover:border-terra hover:text-terra text-cocoa font-semibold text-sm px-5 py-3 rounded-full transition text-center">
+            Traçar rota
+          </a>
+          <a href="https://wa.me/5551985052984?text=Ol%C3%A1!%20Quero%20agendar%20banho%2Ftosa%20para%20meu%20pet." target="_blank" rel="noopener noreferrer" class="bg-terra hover:bg-terra-deep text-cream font-semibold text-sm px-5 py-3 rounded-full transition text-center shadow-md shadow-terra/30">
+            Agendar →
+          </a>
+        </div>
+      </div>
+
+      <div class="aspect-video lg:aspect-auto lg:min-h-[440px] rounded-2xl overflow-hidden border border-terra/15">
+        <iframe
+          src="https://www.google.com/maps?q=R.+Serra+das+Vertentes+343+Jardim+Paranapanema+Campinas+SP+13100-238&output=embed"
+          class="w-full h-full"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Localização Pata Molhada Pet Shop"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<section class="relative py-24 sm:py-32 px-5 sm:px-8 bg-gradient-to-br from-terra via-terra-deep to-cocoa text-cream overflow-hidden">
+  <span class="absolute top-12 left-[10%] text-4xl opacity-20" aria-hidden="true">🐾</span>
+  <span class="absolute top-32 right-[15%] text-3xl opacity-20" aria-hidden="true">🐾</span>
+  <span class="absolute bottom-20 left-[20%] text-3xl opacity-20" aria-hidden="true">🐾</span>
+  <span class="absolute bottom-32 right-[10%] text-4xl opacity-20" aria-hidden="true">🐾</span>
+
+  <div class="relative max-w-3xl mx-auto text-center" data-reveal>
+    <p class="ornament-line font-mono text-[10px] uppercase tracking-[0.4em] text-cream/70"><span>Pronta(o) pra agendar?</span></p>
+    <h2 class="display font-bold mt-8 text-5xl sm:text-7xl lg:text-8xl leading-[0.95]">
+      Vem deixar seu pet<br/>
+      <span class="display-italic">cheirosinho</span>.
+    </h2>
+    <p class="mt-8 text-cream/85 text-lg sm:text-xl max-w-xl mx-auto leading-relaxed">
+      Mensagem direta no WhatsApp, sem cadastro, sem tabelinha automática chata. A gente responde rápido e te encaixa.
+    </p>
+    <a href="https://wa.me/5551985052984?text=Ol%C3%A1!%20Quero%20agendar%20banho%2Ftosa%20para%20meu%20pet." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 mt-10 bg-cream hover:bg-white text-terra-deep font-bold text-lg sm:text-xl px-10 py-5 rounded-full shadow-2xl shadow-cocoa/40 transition pulse-terra">
+      <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+      Agendar no WhatsApp
+    </a>
+    <p class="mt-6 font-mono text-[10px] uppercase tracking-[0.4em] text-cream/60">
+      (51) 98505-2984 · ter–sáb
+    </p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-cocoa text-cream/85 py-14 px-5 sm:px-8">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid sm:grid-cols-3 gap-10">
+      <div>
+        <p class="display-italic text-3xl font-bold text-terra-light leading-none">Pata Molhada</p>
+        <p class="font-mono text-[10px] uppercase tracking-[0.4em] text-cream/50 mt-2">— pet shop · campinas</p>
+        <p class="mt-5 text-sm leading-relaxed text-cream/70">
+          Banho, tosa, hidratação e Uber Pet no Jardim Paranapanema. Cuidado profissional pro seu melhor amigo.
+        </p>
+      </div>
+      <div>
+        <p class="font-mono text-[10px] uppercase tracking-[0.4em] text-terra-light">Endereço</p>
+        <p class="mt-3 text-sm leading-relaxed">
+          R. Serra das Vertentes, 343<br/>
+          Jardim Paranapanema<br/>
+          Campinas / SP · 13100-238
+        </p>
+      </div>
+      <div>
+        <p class="font-mono text-[10px] uppercase tracking-[0.4em] text-terra-light">Contato</p>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a href="https://wa.me/5551985052984" target="_blank" rel="noopener noreferrer" class="hover:text-terra-light transition">(51) 98505-2984 · WhatsApp</a></li>
+          <li><a href="tel:+551999109604" class="hover:text-terra-light transition">(19) 99109-6044 · loja</a></li>
+          <li class="text-cream/60">Terça a sábado · sábado com agendamento</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-12 pt-6 border-t border-cream/10 flex flex-col sm:flex-row justify-between items-center gap-3 text-[10px] font-mono text-cream/40 tracking-[0.3em] uppercase">
+      <span>© 2026 Pata Molhada Pet Shop</span>
+      <span>🐾 Banho · Tosa · Uber Pet</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ MOBILE STICKY BOTTOM CTA ============ -->
+<div class="sm:hidden fixed inset-x-0 bottom-0 z-50 bg-cream/95 border-t border-terra/30 px-3 pt-3 flex items-center gap-2 shadow-2xl"
+     style="padding-bottom: max(0.75rem, env(safe-area-inset-bottom)); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);">
+  <a href="tel:+5551985052984" aria-label="Ligar" class="flex-shrink-0 w-12 h-12 rounded-full border border-terra/40 text-terra flex items-center justify-center hover:bg-terra/10 transition">
+    <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+  </a>
+  <a href="https://wa.me/5551985052984?text=Ol%C3%A1!%20Quero%20agendar%20banho%2Ftosa%20para%20meu%20pet." target="_blank" rel="noopener noreferrer" class="flex-1 bg-terra hover:bg-terra-deep text-cream font-bold text-sm px-4 py-3.5 rounded-full flex items-center justify-center gap-2 shadow-lg shadow-terra/40 transition">
+    🐾 Agendar banho/tosa
+  </a>
+</div>
+
+</body>
+</html>
